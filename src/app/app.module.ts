@@ -19,7 +19,9 @@ import {
   MatInputModule,
   MatListModule,
   MatSelectModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatToolbarModule,
+  MatMenuModule
 } from '@angular/material';
 
 @NgModule({
@@ -34,8 +36,16 @@ import {
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatIconModule, MatButtonModule, MatSelectModule, MatInputModule, MatCheckboxModule, MatSidenavModule, MatListModule,
-    GridsterModule
+    GridsterModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

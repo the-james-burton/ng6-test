@@ -1,9 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="over" [(opened)]="opened">
+      <mat-nav-list>
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" mat-list-item> Home</a>
+        <a routerLink="about/42" routerLinkActive="active" mat-list-item> About</a>
+        <a routerLink="grid" routerLinkActive="active" mat-list-item> Grid</a>
+      </mat-nav-list>
+    </mat-sidenav>
 
-<ul>
-  <li><a routerLink="">Home</a></li>
-  <li><a routerLink="about/42">About</a></li>
-  <li><a routerLink="grid">Grid</a></li>
-</ul>
+  <mat-sidenav-content>
+    <p><button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button></p>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-<router-outlet></router-outlet>

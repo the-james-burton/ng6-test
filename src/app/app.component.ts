@@ -8,4 +8,7 @@ import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/co
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
+  events: string[] = [];
+  opened: boolean;
+
 }
